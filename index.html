@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MZ Tech Solutions</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-900 text-white font-sans">
+
+  <!-- HEADER -->
+  <header class="bg-gray-800 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center p-5">
+      <h1 class="text-2xl font-bold text-blue-400">Munhoz Tech</h1>
+      <nav class="space-x-6">
+        <a href="#servicos" class="hover:text-blue-400">Serviços</a>
+        <a href="#sobre" class="hover:text-blue-400">Sobre</a>
+        <a href="#contato" class="hover:text-blue-400">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="text-center py-20 bg-gradient-to-r from-blue-600 to-purple-700">
+    <h2 class="text-4xl font-bold mb-4">Assistência Técnica Especializada</h2>
+    <p class="text-lg mb-6">Computadores, notebooks e celulares com qualidade e confiança</p>
+    <a href="https://wa.me/5519992465538" target="_blank"
+       class="bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-200">
+       Solicitar Orçamento
+    </a>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section id="servicos" class="container mx-auto py-16 px-6">
+    <h3 class="text-3xl font-bold text-center mb-10">Serviços</h3>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:scale-105 transition">
+        <h4 class="text-xl font-semibold mb-2">Formatação</h4>
+        <p>Formatação de computadores e celulares com instalação completa.</p>
+      </div>
+
+      <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:scale-105 transition">
+        <h4 class="text-xl font-semibold mb-2">Upgrades</h4>
+        <p>Melhore o desempenho do seu PC ou notebook com upgrades.</p>
+      </div>
+
+      <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:scale-105 transition">
+        <h4 class="text-xl font-semibold mb-2">Montagem de PCs</h4>
+        <p>Montagem de computadores personalizados para qualquer uso.</p>
+      </div>
+
+      <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:scale-105 transition">
+        <h4 class="text-xl font-semibold mb-2">Limpeza e Manutenção</h4>
+        <p>Limpeza interna e manutenção preventiva completa.</p>
+      </div>
+
+      <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:scale-105 transition">
+        <h4 class="text-xl font-semibold mb-2">Instalação de Software</h4>
+        <p>Instalação de programas e sistemas operacionais com preço acessível.</p>
+      </div>
+
+      <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:scale-105 transition">
+        <h4 class="text-xl font-semibold mb-2">Suporte Técnico</h4>
+        <p>Resolução de problemas, otimização e suporte geral.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="bg-gray-800 py-16 px-6 text-center">
+    <h3 class="text-3xl font-bold mb-6">Sobre</h3>
+    <p class="max-w-2xl mx-auto">
+      A Munhoz Tech Solutions é uma assistência técnica especializada em computadores e notebooks,
+      oferecendo serviços de alta qualidade com foco em desempenho, segurança e satisfação do cliente.
+    </p>
+    <p class="mt-2 font-semibold text-blue-400">
+      Gustavo Munhoz Lima
+    </p>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="container mx-auto py-16 px-6 text-center">
+    <h3 class="text-3xl font-bold mb-6">Contato</h3>
+
+    <p class="mb-2">📱 WhatsApp: (19) 99246-5538</p>
+    <p class="mb-6">📧 Email: munhozlimagustavo@gmail.com</p>
+
+    <a href="https://wa.me/5519992465538" target="_blank"
+       class="bg-green-500 px-6 py-3 rounded-lg font-semibold hover:bg-green-600">
+       Falar no WhatsApp
+    </a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-800 text-center p-6 mt-10">
+    <p>© 2026 Munhoz Tech Solutions - Todos os direitos reservados</p>
+  </footer>
+
+  <!-- JS SIMPLES -->
+  <script>
+    // Scroll suave
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
